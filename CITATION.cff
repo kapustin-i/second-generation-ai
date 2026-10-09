@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: "If you use this specification, please cite it as below."
+title: "Second-Generation AI: The Hybrid Survivability Criterion. Open specification, version 0.2"
+version: "0.2"
+license: CC-BY-4.0
+doi: "10.5281/zenodo.23256580"
+date-released: "2026-10-09"
+authors:
+  - family-names: Kapustin
+    given-names: Igor
+    orcid: "https://orcid.org/0009-0008-5665-9281"
+abstract: >-
+  An open specification proposing that a generation of AI be defined not by a
+  model's power or speed, but by the hybrid survivability of the human operator
+  and the machine as a single system: its harmlessness in three circles — for the
+  operator, for the people around while it works, and for the people affected by
+  the outcome. First generation extends human capabilities; second generation
+  extends and protects. Companion to the essay "The Second Generation of AI".
+  Written with the participation of AI (Claude, ChatGPT).
+keywords:
+  - second-generation AI
+  - hybrid survivability
+  - human-AI system
+  - hybrid text
+  - error prevention
+  - first do no harm
+  - evaluation
+  - specification
+repository-code: "https://github.com/kapustin-i/second-generation-ai"
+references:
+  - type: generic
+    title: "The Second Generation of AI / Второе поколение ИИ"
+    authors:
+      - family-names: Kapustin
+        given-names: Igor
+    year: 2026
+    doi: "10.5281/zenodo.23257293"
+preferred-citation:
+  type: generic
+  title: "Second-Generation AI: The Hybrid Survivability Criterion. Open specification, version 0.2"
+  authors:
+    - family-names: Kapustin
+      given-names: Igor
+      orcid: "https://orcid.org/0009-0008-5665-9281"
+  year: 2026
+  version: "0.2"
+  doi: "10.5281/zenodo.23256580"
+  publisher:
+    name: Zenodo
