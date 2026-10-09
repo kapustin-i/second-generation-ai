@@ -3,7 +3,7 @@
 **The Hybrid Survivability Criterion. Open specification, version 0.2** · 2026 · DOI: [10.5281/zenodo.23256580](https://doi.org/10.5281/zenodo.23256580) · CC BY 4.0
 
 Author: Igor Kapustin (ORCID [0009-0008-5665-9281](https://orcid.org/0009-0008-5665-9281)).
-AI that took part in writing this text: Claude (Anthropic), ChatGPT (OpenAI; also as reviewer of version 0.1).
+AI that took part in writing this text: Claude (Anthropic), ChatGPT (OpenAI; also as reviewer of version 0.1), DeepSeek (review of Chinese-language sources).
 
 Companion to the essay [The Second Generation of AI · Второе поколение ИИ](https://doi.org/10.5281/zenodo.23257293) from [The Bush Book](https://github.com/kapustin-i/bush-book).
 
@@ -36,7 +36,7 @@ This is an open specification, open to criticism. Questions, objections and prop
 
 ## How to cite
 
-Kapustin, I. (2026). *Second-Generation AI: The Hybrid Survivability Criterion* (ИИ второго поколения: критерий гибридной выживаемости). Open specification, version 0.2. Written with Claude and ChatGPT. Zenodo. https://doi.org/10.5281/zenodo.23256580
+Kapustin, I. (2026). *Second-Generation AI: The Hybrid Survivability Criterion* (ИИ второго поколения: критерий гибридной выживаемости). Open specification, version 0.2. Written with Claude, ChatGPT and DeepSeek. Zenodo. https://doi.org/10.5281/zenodo.23256580
 
 ## Related
 

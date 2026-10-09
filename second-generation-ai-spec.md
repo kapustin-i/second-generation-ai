@@ -3,7 +3,7 @@
 *The Hybrid Survivability Criterion. Open specification, version 0.2*
 
 **Igor Kapustin**  
-AI that took part in writing this text: Claude (Anthropic), ChatGPT (OpenAI)  
+AI that took part in writing this text: Claude (Anthropic), ChatGPT (OpenAI), DeepSeek  
 Open specification · version 0.2 · DOI: [10.5281/zenodo.23256580](https://doi.org/10.5281/zenodo.23256580) · CC BY 4.0
 
 ## 0. Status
@@ -46,7 +46,7 @@ Instrumentality. People act on it: they treat, judge, teach, give orders, make g
 
 Speed of synthesis, turnover and scalability. It appears in seconds, spreads quickly and is replicated.
 
-Contagiousness. People quote and retell it, and the next AI models learn from it [3]. An error in it tends to multiply — among people and among machines.
+Contagiousness. People quote and retell it, and the next AI models learn from it [3]; too much synthetic text in training leads models to degrade [4]. An error in it tends to multiply — among people and among machines.
 
 Together these properties make an inconspicuous error in a hybrid text more dangerous than an error in ordinary text.
 
@@ -88,7 +88,7 @@ Claim A does not prove claim B: safety may come from search, interface, the orga
 
 Below are abilities a G2 model probably needs. The model’s main output is a structured note: the passage or omission; the reason for doubt; supporting material (a specific source passage, date or version — and an explicit note when there is no source); the possible consequence; the next step of review. How it is displayed — font, color, perhaps one day tactile cues — belongs to the interface.
 
-F1. Uses the available history of creation and editing to show what the machine wrote, what the human added and what was revised together. Marks unknown provenance and unavailable context. Provenance is not guessed from style and is not a measure of reliability: human text gets no presumption of correctness, machine text no presumption of error.
+F1. Uses the available history of creation and editing to show what the machine wrote, what the human added and what was revised together. Marks unknown provenance and unavailable context. Provenance is not guessed from style and is not a measure of reliability: human text gets no presumption of correctness, machine text no presumption of error. Labeling of AI content — mandatory in China since 1 September 2025 [5] — answers the question “what did the machine do”, but not “is it true”.
 
 F2. Looks for errors on both sides — its own and the human’s — and for interaction errors: defects arising when individually acceptable passages are combined, and omissions — missing conditions, exceptions, necessary information.
 
@@ -100,9 +100,9 @@ F5. Helps set priorities and does not flag everything. Shows separately the esti
 
 F6. Shows which conclusion does not follow from the data given and what information is missing for a check, and offers a safe way forward: request information, narrow the claim, remove the passage, postpone release or bring in a specialist.
 
-F7. Helps look for disconfirming evidence and alternative explanations, not only for support of a conclusion already reached [4]. The effectiveness of this help is judged by the human’s decisions. Disagreement among several models can signal a need for review; their agreement does not by itself confirm truth.
+F7. Helps look for disconfirming evidence and alternative explanations, not only for support of a conclusion already reached [6]. The effectiveness of this help is judged by the human’s decisions. Disagreement among several models can signal a need for review; their agreement does not by itself confirm truth.
 
-F8. Makes the grounds and limits of material beyond the operator’s competence easier to check — as sensor fusion brings a fighter’s sensor readings into one picture [5]. And shows which questions remain beyond the operator’s competence: sometimes the best help is to see that a specialist is needed.
+F8. Makes the grounds and limits of material beyond the operator’s competence easier to check — as sensor fusion brings a fighter’s sensor readings into one picture [7]. And shows which questions remain beyond the operator’s competence: sometimes the best help is to see that a specialist is needed.
 
 ## 7. Signature threshold
 
@@ -113,6 +113,8 @@ Review outcomes: corrected; basis checked; information clarified; passage remove
 A single click on “I have read this” is not enough. The absence of flags does not mean the absence of errors: the checking model has its limits too. This is a necessary step, not proof of infallibility.
 
 If a release lock is used, its behavior is described for text corrections, for errors in the warning itself and for technical failures.
+
+Law is already moving in this direction. In 2026 China’s Supreme People’s Court required litigants to check documents prepared with AI before filing, to disclose the use of AI and to answer for accuracy [8]; in Chinese online medicine, automatic generation of prescriptions by AI has been prohibited since 2022 [9]. Such norms rest on prohibitions and after-the-fact liability. The specification proposes to complement them with review assistance built into the tool itself.
 
 The review record captures the decision on each issue and serves prevention and the protection of people, not the assignment of blame. It keeps both what the system showed and how much time the human had. A record cannot prove, with a single click, that the human actually understood.
 
@@ -130,11 +132,11 @@ The document set includes natural errors, deliberately inserted errors and docum
 
 Primary outcome: the proportion of all assigned tasks that ended with the release of a text containing at least one serious hazardous error.
 
-Secondary measures that keep the primary one from being gamed: the proportion of tasks completed acceptably and on time; the proportion of known hazardous errors remaining at release; new hazardous errors introduced during correction; the proportion of justified warnings and of hazardous errors found; human time and workload (for example, NASA-TLX [6]); scale of impact — the number of affected decisions or people. Without a denominator, a count of errors says nothing about risk: if the volume of documents grows many times over, a lower error rate per document does not mean less total harm.
+Secondary measures that keep the primary one from being gamed: the proportion of tasks completed acceptably and on time; the proportion of known hazardous errors remaining at release; new hazardous errors introduced during correction; the proportion of justified warnings and of hazardous errors found; human time and workload (for example, NASA-TLX [10]); scale of impact — the number of affected decisions or people. Without a denominator, a count of errors says nothing about risk: if the volume of documents grows many times over, a lower error rate per document does not mean less total harm.
 
 Severity is rated on a common frame that each field fills with its own examples: S0 — no harmful consequence expected; S1 — minor, quickly remediable; S2 — significant, mostly reversible; S3 — serious or lasting consequences for health, rights or living conditions; S4 — catastrophic, including death or irreversible serious harm. These are ordinal categories, not weights: S4 is not four S1s, and fewer minor errors do not offset new severe ones. Probability, number of people affected and reversibility are rated separately. The guiding question: what would plausibly happen if people acted on this text as intended?
 
-Test conditions include time pressure and material beyond the operator’s competence — where the danger is greatest. For medical applications, the DECIDE-AI guideline is useful [7].
+Test conditions include time pressure and material beyond the operator’s competence — where the danger is greatest. For medical applications, the DECIDE-AI guideline is useful [11].
 
 Scale. A pilot covers one field and one document type: for example, 24 operators with 8 different tasks in two conditions, 192 sessions in all, with randomized condition order. A pilot tests the tasks, timing, clarity of warnings and expert agreement, but does not confirm safety against rare severe errors. Confirmation needs more: for instance, detecting a drop in the rate of flawed releases from 20% to 10% requires about 200 independent observations per condition. Zero events does not mean zero risk: with 100 observations and no event, the upper 95% bound on the probability is about 3%.
 
@@ -156,19 +158,25 @@ And what would you, the reader, add, remove or dispute?
 
 The specification does not present as new either the task of safe human–system interaction or help before the signature. The closest neighbors:
 
-ANSI/HFES 400-2021, Human Readiness Levels — nine levels of a technology’s readiness for safe and effective human use [8]. This is readiness for use, not generations of AI by reduction of harmful errors.
+ANSI/HFES 400-2021, Human Readiness Levels — nine levels of a technology’s readiness for safe and effective human use [12]. This is readiness for use, not generations of AI by reduction of harmful errors.
 
-The Trust Calibration Maturity Model (TCMM, Steinmetz et al., 2025) — maturity levels of AI evaluation, the highest including human–AI team performance [9]. The levels describe how completely a system is understood, not a proven size of harm reduction.
+The Trust Calibration Maturity Model (TCMM, Steinmetz et al., 2025) — maturity levels of AI evaluation, the highest including human–AI team performance [13]. The levels describe how completely a system is understood, not a proven size of harm reduction.
 
-Human-Centered AI (Shneiderman, 2020) — reliability, safety, human control and automation considered together [10]; no generation boundary is proposed. The NIST AI RMF assesses safety in context of use, but it is not a generation classification [11].
+Human-Centered AI (Shneiderman, 2020) — reliability, safety, human control and automation considered together [14]; no generation boundary is proposed. The NIST AI RMF assesses safety in context of use, but it is not a generation classification [15].
 
-Predecessors of individual functions: CriticGPT, a model trained to help find errors [12]; prover–verifier games, training for checkability [13]; the Verify feature in Thomson Reuters’ legal assistant, as described by the company itself [14]. Their existence does not mean the G2 criterion has already been met.
+The notion of “AI generations” is already in use: Academician Zhang Bo (Tsinghua University) has proposed a “third generation of AI” that combines knowledge and data [16]. There a generation is defined by how the machine is built; here, by the harmlessness of the human–machine pair.
 
-The “helpful, honest, harmless” principle [15] already covers honesty, uncertainty and harmful advice, not only refusal of dangerous content. The specification does not set itself against it; it singles out a specific object of testing — joint work — and a specific basis for classification.
+The TRC paradigm (Cheng Xueqi et al., Chinese Academy of Sciences, 2025) distinguishes three levels of safety: the internal trustworthiness of the algorithm, the regulatability of its application and the controllability of the system [17]. In form this is close to the three circles, but its axis is the type of safety goal, while here it is the one who may be harmed.
 
-What is proposed as new: using a confirmed reduction of hazardous errors in joint work as the criterion of an AI generation, with safety considered in three circles. The search found no exact predecessor of this combination; that is a search result, not proof of priority.
+A draft Shanghai standard on AI agent levels (2026) grades agents from basic L1 to “collaborative” L4 [18]. These are levels of the agent’s capability, not of the pair’s harmlessness.
 
-The aviation image is the author’s analogy. The division of fighters into generations is itself unofficial and contested, and the returning pilot illustrates mainly the first circle. An example of a protective function is Auto-GCAS, credited with saving eleven F-16 pilots [16].
+Predecessors of individual functions: CriticGPT, a model trained to help find errors [19]; prover–verifier games, training for checkability [20]; the Verify feature in Thomson Reuters’ legal assistant, as described by the company itself [21]. Their existence does not mean the G2 criterion has already been met.
+
+The “helpful, honest, harmless” principle [22] already covers honesty, uncertainty and harmful advice, not only refusal of dangerous content. The specification does not set itself against it; it singles out a specific object of testing — joint work — and a specific basis for classification.
+
+What is proposed as new: using a confirmed reduction of hazardous errors in joint work as the criterion of an AI generation, with safety considered in three circles. The search — in English- and Chinese-language sources — found no exact predecessor of this combination; that is a search result, not proof of priority.
+
+The aviation image is the author’s analogy. The division of fighters into generations is itself unofficial and contested, and the returning pilot illustrates mainly the first circle. An example of a protective function is Auto-GCAS, credited with saving eleven F-16 pilots [23].
 
 ## References
 
@@ -178,32 +186,46 @@ The aviation image is the author’s analogy. The division of fighters into gene
 
 [3] Kapustin I. The Blind Kittens and the Trainers of Their New AI Models. Essay. 2026. DOI 10.5281/zenodo.22924768. [Link](https://doi.org/10.5281/zenodo.22924768)
 
-[4] Recchia G. et al. Confirmation Bias: A Challenge for Scalable Oversight. Proceedings of the AAAI Conference on Artificial Intelligence. 2026 (preprint arXiv:2507.19486, 2025). [Link](https://ojs.aaai.org/index.php/AAAI/article/view/41124)
+[4] Zhu X. et al. How to Synthesize Text Data without Model Collapse? ICML 2025. Preprint arXiv:2412.14689. [Link](https://arxiv.org/abs/2412.14689)
 
-[5] Sensor Fusion: The Secret Sauce that Makes the F-35 Revolutionary. The National Interest (illustration of the analogy). [Link](https://nationalinterest.org/blog/buzz/sensor-fusion-secret-sauce-makes-f-35-revolutionary-192873)
+[5] Cyberspace Administration of China et al. 人工智能生成合成内容标识办法 [Measures for labeling AI-generated and synthetic content]. 14.03.2025, in force from 01.09.2025. [Link](https://www.cac.gov.cn/2025-03/14/c_1743654685899683.htm)
 
-[6] NASA. Task Load Index (NASA-TLX). Description of the subjective workload tool. [Link](https://software.nasa.gov/software/ARC-15150-1A)
+[6] Recchia G. et al. Confirmation Bias: A Challenge for Scalable Oversight. Proceedings of the AAAI Conference on Artificial Intelligence. 2026 (preprint arXiv:2507.19486, 2025). [Link](https://ojs.aaai.org/index.php/AAAI/article/view/41124)
 
-[7] Vasey B. et al. Reporting guideline for the early-stage clinical evaluation of decision support systems driven by artificial intelligence: DECIDE-AI. 2022. [Link](https://pmc.ncbi.nlm.nih.gov/articles/PMC9116198/)
+[7] Sensor Fusion: The Secret Sauce that Makes the F-35 Revolutionary. The National Interest (illustration of the analogy). [Link](https://nationalinterest.org/blog/buzz/sensor-fusion-secret-sauce-makes-f-35-revolutionary-192873)
 
-[8] ANSI/HFES 400-2021. Human Readiness Level Scale in the System Development Process. Human Factors and Ergonomics Society (standard description). [Link](https://www.hfes.org/Publications/Technical-Standards)
+[8] Supreme People’s Court of China. 最高人民法院关于依法审理涉人工智能纠纷案件的意见（法发〔2026〕10号）[Opinions on adjudicating AI-related disputes in accordance with law]. 07.09.2026. [Link](https://www.court.gov.cn/zixun/xiangqing/511101.html)
 
-[9] Steinmetz S. T. et al. The Trust Calibration Maturity Model for Characterizing and Communicating Trustworthiness of AI Systems. 2025. Preprint arXiv:2503.15511. [Link](https://arxiv.org/abs/2503.15511)
+[9] National Health Commission of China. 互联网诊疗监管细则（试行）[Rules for the supervision of online diagnosis and treatment (trial)]. 2022 (China News report). [Link](https://www.chinanews.com.cn/cj/2022/06-27/9789307.shtml)
 
-[10] Shneiderman B. Human-Centered Artificial Intelligence: Reliable, Safe & Trustworthy. 2020. Preprint arXiv:2002.04087. [Link](https://arxiv.org/abs/2002.04087)
+[10] NASA. Task Load Index (NASA-TLX). Description of the subjective workload tool. [Link](https://software.nasa.gov/software/ARC-15150-1A)
 
-[11] NIST. AI Risk Management Framework (AI RMF 1.0): Characteristics of Trustworthy AI Systems. 2023. [Link](https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/)
+[11] Vasey B. et al. Reporting guideline for the early-stage clinical evaluation of decision support systems driven by artificial intelligence: DECIDE-AI. 2022. [Link](https://pmc.ncbi.nlm.nih.gov/articles/PMC9116198/)
 
-[12] McAleese N. et al. LLM Critics Help Catch LLM Bugs. 2024. Preprint arXiv:2407.00215. [Link](https://arxiv.org/abs/2407.00215)
+[12] ANSI/HFES 400-2021. Human Readiness Level Scale in the System Development Process. Human Factors and Ergonomics Society (standard description). [Link](https://www.hfes.org/Publications/Technical-Standards)
 
-[13] Kirchner J. H. et al. Prover-Verifier Games improve legibility of LLM outputs. 2024. Preprint arXiv:2407.13692. [Link](https://arxiv.org/abs/2407.13692)
+[13] Steinmetz S. T. et al. The Trust Calibration Maturity Model for Characterizing and Communicating Trustworthiness of AI Systems. 2025. Preprint arXiv:2503.15511. [Link](https://arxiv.org/abs/2503.15511)
 
-[14] Colbert E. If You Can’t Verify It, You Can’t Sign It. Thomson Reuters Institute, 05.05.2026 (company material about its own product). [Link](https://www.thomsonreuters.com/en-us/posts/innovation/if-you-cant-verify-it-you-cant-sign-it/)
+[14] Shneiderman B. Human-Centered Artificial Intelligence: Reliable, Safe & Trustworthy. 2020. Preprint arXiv:2002.04087. [Link](https://arxiv.org/abs/2002.04087)
 
-[15] Askell A. et al. A General Language Assistant as a Laboratory for Alignment. 2021. Preprint arXiv:2112.00861. [Link](https://arxiv.org/abs/2112.00861)
+[15] NIST. AI Risk Management Framework (AI RMF 1.0): Characteristics of Trustworthy AI Systems. 2023. [Link](https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/)
 
-[16] NASA. Resilient Autonomy Ends, Autonomy Research Ongoing. 2021 (updated 2023). [Link](https://www.nasa.gov/aeronautics/resilient-autonomy-ends-autonomy-research-ongoing-suwyc/)
+[16] Zhang B., Zhu J., Su H. 迈向第三代人工智能 [Toward the third generation of artificial intelligence]. Scientia Sinica Informationis. 2020. 50(9):1281–1302. DOI 10.1360/SSI-2020-0204. [Link](https://doi.org/10.1360/SSI-2020-0204)
+
+[17] Cheng X., Chen W., Shen H., Shan S., Chen X., Li G. 智能算法安全：内涵、科学问题与展望 [Intelligent algorithm safety: concepts, scientific problems and prospects]. Bulletin of the Chinese Academy of Sciences. 2025. 40(3):419–428. [Link](https://bulletinofcas.researchcommons.org/journal/vol40/iss3/3)
+
+[18] Shanghai Artificial Intelligence Industry Association. 人工智能 智能体能力分级与评测方法（征求意见稿）[Draft standard: capability levels of AI agents and evaluation methods]. 2026. [Link](https://www.ttbz.org.cn/upload/file/20260209/6390624833014961116707092.pdf)
+
+[19] McAleese N. et al. LLM Critics Help Catch LLM Bugs. 2024. Preprint arXiv:2407.00215. [Link](https://arxiv.org/abs/2407.00215)
+
+[20] Kirchner J. H. et al. Prover-Verifier Games improve legibility of LLM outputs. 2024. Preprint arXiv:2407.13692. [Link](https://arxiv.org/abs/2407.13692)
+
+[21] Colbert E. If You Can’t Verify It, You Can’t Sign It. Thomson Reuters Institute, 05.05.2026 (company material about its own product). [Link](https://www.thomsonreuters.com/en-us/posts/innovation/if-you-cant-verify-it-you-cant-sign-it/)
+
+[22] Askell A. et al. A General Language Assistant as a Laboratory for Alignment. 2021. Preprint arXiv:2112.00861. [Link](https://arxiv.org/abs/2112.00861)
+
+[23] NASA. Resilient Autonomy Ends, Autonomy Research Ongoing. 2021 (updated 2023). [Link](https://www.nasa.gov/aeronautics/resilient-autonomy-ends-autonomy-research-ongoing-suwyc/)
 
 ---
 
-Version 0.2 of 9 October 2026. Companion to the essay “The Second Generation of AI”. Written with the participation of AI: Claude and ChatGPT (ChatGPT also as reviewer of version 0.1).
+Version 0.2 of 9 October 2026. Companion to the essay “The Second Generation of AI”. Written with the participation of AI: Claude, ChatGPT and DeepSeek (ChatGPT also as reviewer of version 0.1; DeepSeek for the review of Chinese-language sources).
