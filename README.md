@@ -40,7 +40,7 @@ Kapustin, I. (2026). *Second-Generation AI: The Hybrid Survivability Criterion* 
 
 ## Related
 
-- Essay: The Second Generation of AI · Второе поколение ИИ — [10.5281/zenodo.23257293](https://doi.org/10.5281/zenodo.23257293)
+- Essay: The Second Generation of AI · Второе поколение ИИ — [10.5281/zenodo.23257293](https://doi.org/10.5281/zenodo.23257293) · [short version on LinkedIn](https://www.linkedin.com/pulse/second-generation-ai-igor-kapustin-w2xaf)
 - The Snake's Tongue · Язык змеи (Chapter 1 of The Bush Book) — [10.5281/zenodo.23164404](https://doi.org/10.5281/zenodo.23164404)
 - The Blind Kittens and the Trainers of Their New AI Models — [10.5281/zenodo.22924768](https://doi.org/10.5281/zenodo.22924768)
 - The Bush Book (all versions) — [10.5281/zenodo.23042946](https://doi.org/10.5281/zenodo.23042946)
