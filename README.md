@@ -7,6 +7,11 @@ AI that took part in writing this text: Claude (Anthropic), ChatGPT (OpenAI; als
 
 Companion to the essay [The Second Generation of AI · Второе поколение ИИ](https://doi.org/10.5281/zenodo.23257293) from [The Bush Book](https://github.com/kapustin-i/bush-book).
 
+## In this repository
+
+- **Second-Generation AI: The Hybrid Survivability Criterion** · ИИ второго поколения: критерий гибридной выживаемости — open specification, version 0.2 · DOI [10.5281/zenodo.23256580](https://doi.org/10.5281/zenodo.23256580) — this page. *How to recognize the second generation: by its result.*
+- **[The Lesson Path · Путь урока](lesson-path/)** — open specification, version 0.1 · DOI [10.5281/zenodo.23440022](https://doi.org/10.5281/zenodo.23440022) — how a person’s correction becomes a verified lesson for an AI model and is credited to its author. *How to grow the second generation.* Companion to the essay [How Will We Know Second-Generation AI? · Как узнать второе поколение ИИ?](https://doi.org/10.5281/zenodo.23440070)
+
 ## Read
 
 | | English | Русский |
@@ -41,6 +46,8 @@ Kapustin, I. (2026). *Second-Generation AI: The Hybrid Survivability Criterion* 
 ## Related
 
 - Essay: The Second Generation of AI · Второе поколение ИИ — [10.5281/zenodo.23257293](https://doi.org/10.5281/zenodo.23257293) · [short version on LinkedIn](https://www.linkedin.com/pulse/second-generation-ai-igor-kapustin-w2xaf)
+- Essay: How Will We Know Second-Generation AI? · Как узнать второе поколение ИИ? — [10.5281/zenodo.23440070](https://doi.org/10.5281/zenodo.23440070) · [GitHub](https://github.com/kapustin-i/bush-book/tree/main/chapters/how-will-we-know-second-generation-ai)
+- Open specification: [The Lesson Path · Путь урока](lesson-path/) — [10.5281/zenodo.23440022](https://doi.org/10.5281/zenodo.23440022)
 - The Snake's Tongue · Язык змеи (Chapter 1 of The Bush Book) — [10.5281/zenodo.23164404](https://doi.org/10.5281/zenodo.23164404)
 - The Blind Kittens and the Trainers of Their New AI Models — [10.5281/zenodo.22924768](https://doi.org/10.5281/zenodo.22924768)
 - The Bush Book (all versions) — [10.5281/zenodo.23042946](https://doi.org/10.5281/zenodo.23042946)
